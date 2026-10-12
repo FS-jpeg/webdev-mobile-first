@@ -3,6 +3,7 @@ h1,
 h2 {
   font-family: "Raleway", sans-serif;
 }
+
 .container {
   margin: auto;
   max-width: 1200px;
@@ -12,6 +13,13 @@ header {
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
+}
+.burger {
+  display: none;
+}
+nav {
+/* for burger menu */
+  overflow: auto; 
 }
 header h1 a:hover {
   text-decoration: underline;
@@ -74,3 +82,27 @@ tr:nth-child(odd) {
   background-color: #ccc;
 }
 /* Form Styling Needs Adding */
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+form > div {
+  margin: 15px 0;
+  display: flex;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+}
+
+.submitContainer {
+  justify-content: flex-end;
+}
+
+input[type="submit"] {
+  width: auto;
+  margin: 0;
+}
